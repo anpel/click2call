@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>click2call</name>
+    </assembly>
+    <members>
+        <member name="T:click2call.MainForm">
+            <summary>
+            Runs the whole damn thing
+            </summary>
+        </member>
+        <member name="M:click2call.MainForm.#ctor(System.String[])">
+            <summary>
+            MainForm constructor that connects to a socket and sends
+            data to originate an Asterisk call.
+            </summary>
+            <param name="args">List of command line arguments</param>
+        </member>
+        <member name="F:click2call.MainForm.components">
+            <summary>
+            Designer variable used to keep track of non-visual components.
+            </summary>
+        </member>
+        <member name="M:click2call.MainForm.Dispose(System.Boolean)">
+            <summary>
+            Disposes resources used by the form.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:click2call.MainForm.InitializeComponent">
+            <summary>
+            This method is required for Windows Forms designer support.
+            Do not change the method contents inside the source code editor. The Forms designer might
+            not be able to load this method if it was changed manually.
+            </summary>
+        </member>
+        <member name="F:click2call.Program.exitCode">
+            Exit code reference:
+            
+            0   : Default
+            111 : Invalid arguments
+            113 : Could not parse IP address string
+            120 : Could not create IPEndPoint with given ip and port
+            121 : Error trying to access the socket
+            122 : The socket has been closed
+            123 : The socket is listening
+            130 : Invalid asterisk credentials
+            131 : Could not originate call
+            132 : Invalid internal phoneline user input
+            133 : Could not create registry key
+            200 : OK / Dialing
+            300 : Registry cleared
+        </member>
+        <member name="T:click2call.SocketManager">
+            <summary>
+            Description of SocketManager.
+            </summary>
+        </member>
+        <member name="F:click2call.SocketManager.socket">
+            <summary>
+            The socket object we will use for sending and receiving data
+            </summary>
+        </member>
+        <member name="M:click2call.SocketManager.#ctor(System.String,System.Int32)">
+            <summary>
+            Creates a new SocketManager Object and attempts to connect to the 
+            given socket.
+            </summary>
+            <param name="hostIp">The remote host IP</param>	
+            <param name="port">THe port on the remote host</param>
+        </member>
+        <member name="M:click2call.SocketManager.SendMessageAndGetResponse(System.String)">
+            <summary>
+            Send a message to a socket and read the response until two empty lines
+            are found - "\r\n\r\n".
+            </summary>
+            <param name="message">The message to send to the socket server</param>
+            <returns>The server response</returns>
+        </member>
+        <member name="M:click2call.SocketManager.CreateSocket(System.Net.IPAddress,System.Int32)">
+            <summary>
+            Creates a socket connection to ip:port 
+            </summary>
+            <param name="ipAddress">The remote host IP address</param>	
+            <param name="port">THe port on the remote host</param>
+            <returns>Socket object</returns>
+        </member>
+    </members>
+</doc>
