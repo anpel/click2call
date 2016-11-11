@@ -19,6 +19,7 @@ namespace click2call
 		 * 131 : Could not originate call
 		 * 132 : Invalid internal phoneline user input
 		 * 133 : Could not create registry key
+		 * 132 : Invalid internal command line argument
 		 * 200 : OK / Dialing
 		 * 300 : Registry cleared
 		 */

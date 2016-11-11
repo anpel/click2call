@@ -1,6 +1,0 @@
-C:\Users\apelekoudas\Documents\SharpDevelop Projects\click2call\click2call\bin\Debug\click2call.exe.config
-C:\Users\apelekoudas\Documents\SharpDevelop Projects\click2call\click2call\bin\Debug\click2call.exe
-C:\Users\apelekoudas\Documents\SharpDevelop Projects\click2call\click2call\bin\Debug\click2call.pdb
-C:\Users\apelekoudas\Documents\SharpDevelop Projects\click2call\click2call\obj\Debug\click2call.csprojResolveAssemblyReference.cache
-C:\Users\apelekoudas\Documents\SharpDevelop Projects\click2call\click2call\obj\Debug\click2call.exe
-C:\Users\apelekoudas\Documents\SharpDevelop Projects\click2call\click2call\obj\Debug\click2call.pdb
