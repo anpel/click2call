@@ -13,7 +13,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration ("")]
 [assembly: AssemblyCompany ("Datum Business Solutions")]
 [assembly: AssemblyProduct ("click2call")]
-[assembly: AssemblyCopyright ("Copyright 2016")]
+[assembly: AssemblyCopyright ("Datum Business Solutions - 2016")]
 [assembly: AssemblyTrademark ("2016")]
 [assembly: AssemblyCulture ("")]
 // This sets the default COM visibility of types in the assembly to invisible.
