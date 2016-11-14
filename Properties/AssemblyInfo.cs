@@ -1,6 +1,7 @@
 #region Using directives
 using System;
 using System.Reflection;
+using System.Resources;
 using System.Runtime.InteropServices;
 
 #endregion
@@ -10,10 +11,10 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle ("click2call")]
 [assembly: AssemblyDescription ("")]
 [assembly: AssemblyConfiguration ("")]
-[assembly: AssemblyCompany ("")]
+[assembly: AssemblyCompany ("Datum Business Solutions")]
 [assembly: AssemblyProduct ("click2call")]
 [assembly: AssemblyCopyright ("Copyright 2016")]
-[assembly: AssemblyTrademark ("")]
+[assembly: AssemblyTrademark ("2016")]
 [assembly: AssemblyCulture ("")]
 // This sets the default COM visibility of types in the assembly to invisible.
 // If you need to expose a type to COM, use [ComVisible(true)] on that type.
@@ -24,4 +25,6 @@ using System.Runtime.InteropServices;
 //
 // You can specify all the values or you can use the default the Revision and 
 // Build Numbers by using the '*' as shown below:
-[assembly: AssemblyVersion ("1.0.*")]
+[assembly: AssemblyVersion ("2.0.0.0")]
+[assembly: AssemblyFileVersion ("2.0.0.0")]
+[assembly: NeutralResourcesLanguage ("en")]
