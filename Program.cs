@@ -23,20 +23,24 @@ namespace click2call
 		 * 200 : OK / Dialing
 		 * 300 : Registry cleared
 		 */
-        static int exitCode = 0;
-         
-        public static void ExitApplication(int exitCode)
-        {
-        	//TODO: Show proper messages
-			MessageBox.Show("Προέκυψε σφάλμα κατά την προσπάθεια κλήσης ("+exitCode+")", "Σφάλμα", MessageBoxButtons.OK, MessageBoxIcon.Error);
+		static int exitCode = 0;
+
+		public static void ExitApplication(int exitCode)
+		{
+			MessageBox.Show("Error attempting to originate call. Code " +
+				exitCode,
+				"Error",
+				MessageBoxButtons.OK,
+				MessageBoxIcon.Error
+			);
 			Program.exitCode = exitCode;
 			Environment.Exit(exitCode);
-        }
-        
-        public static void SetExitCode(int exitCode)
-        {
-           Program.exitCode = exitCode;
-        }
+		}
+
+		public static void SetExitCode(int exitCode)
+		{
+			Program.exitCode = exitCode;
+		}
 		
 		[STAThread]
 		private static int Main(string[] args)
